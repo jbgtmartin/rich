@@ -1,1 +1,0 @@
-var richApp = angular.module('richApp', []);
