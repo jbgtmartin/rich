@@ -1,5 +1,7 @@
 'use strict';
 
+var base_url = 'http://localhost/rich/';
+
 /**
  * @ngdoc overview
  * @name frontendApp
@@ -15,7 +17,9 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'ui.sortable',
+    'LocalStorageModule'
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -29,7 +33,25 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/dashboard', {
+        templateUrl: 'views/dashboard.html',
+        controller: 'DashboardCtrl',
+        controllerAs: 'dashboard'
+      })
+      .when('/sign_up', {
+        templateUrl: 'views/sign_up.html',
+        controller: 'SignUpCtrl',
+        controllerAs: 'sign_up'
+      })
+      .when('/sign_in', {
+        templateUrl: 'views/sign_in.html',
+        controller: 'SignInCtrl',
+        controllerAs: 'sign_in'
+      })
       .otherwise({
         redirectTo: '/'
       });
-  });
+  })
+  .config(['localStorageServiceProvider', function(localStorageServiceProvider){
+      localStorageServiceProvider.setPrefix('ls');
+  }]);
