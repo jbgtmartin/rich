@@ -45,6 +45,9 @@ class PagesController extends AppController {
  *	or MissingViewException in debug mode.
  */
 	public function display() {
+		$this->loadModel('First');
+		pr($this->First->find('all'));
+		die();
 		$path = func_get_args();
 
 		$count = count($path);

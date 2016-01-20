@@ -1,0 +1,19 @@
+2016-01-17 16:13:08 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/louisduperier/Web/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-01-17 16:13:28 Error: Fatal Error (1): Class 'String' not found in [/Users/louisduperier/Web/rich/backend/app/Plugin/Mongodb/Model/Datasource/MongodbSource.php, line 1476]
+2016-01-17 16:13:28 Error: [FatalErrorException] Class 'String' not found
+Request URL: /rich/backend/pages/home
+Stack Trace:
+#0 /Users/louisduperier/Web/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'String' ...', '/Users/louisdup...', 1476)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'String' ...', '/Users/louisdup...', 1476, Array)
+#2 /Users/louisduperier/Web/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Class 'String' ...', '/Users/louisdup...', 1476, Array)
+#3 /Users/louisduperier/Web/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
