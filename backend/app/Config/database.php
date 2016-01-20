@@ -67,14 +67,29 @@
 class DATABASE_CONFIG {
 
 	public $default = array(
+        'datasource' => 'Mongodb.MongodbSource',
+        'host' => 'localhost',
+        'database' => 'rich',
+        'port' => 27017,
+        'prefix' => '',
+        'persistent' => 'true',
+        /* optional auth fields
+        'login' => 'mongo', 
+        'password' => 'awesomeness',
+        'replicaset' => array('host' => 'mongodb://hoge:hogehoge@localhost:27021,localhost:27022/blog', 
+                              'options' => array('replicaSet' => 'myRepl')
+                     ),
+        */
+    );
+
+	public $test = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'root',
-		'password' => 'root',
-		'database' => 'rich',
+		'login' => 'user',
+		'password' => 'password',
+		'database' => 'test_database_name',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
-
 }
