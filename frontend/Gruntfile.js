@@ -52,6 +52,12 @@ module.exports = function (grunt) {
         files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
         tasks: ['newer:copy:styles', 'postcss']
       },
+      less:{
+        // if any .less file changes in directory "src/main/less/" run the "less"-task.
+        // change folders to watch accordingly
+        files: ["bower_components/bootstrap/less/*.less"],
+        tasks: ["less"]
+      },
       gruntfile: {
         files: ['Gruntfile.js']
       },
@@ -196,6 +202,22 @@ module.exports = function (grunt) {
           dest: '.tmp/styles/'
         }]
       }
+    },
+
+    // "less"-task configuration
+    //this task will compile all less files to create both *.css and *.min.css
+    less: {
+        //Development non minified version
+        dev: {
+            options: {
+                //Wether to compress or not
+                compress: false
+            },
+            files: {
+                // compilation.css  :  source.less
+                "bower_components/bootstrap/dist/css/bootstrap.css": "bower_components/bootstrap/less/bootstrap.less"
+            }
+        }
     },
 
     // Automatically inject Bower components into the app
