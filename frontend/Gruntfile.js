@@ -55,7 +55,7 @@ module.exports = function (grunt) {
       less:{
         // if any .less file changes in directory "src/main/less/" run the "less"-task.
         // change folders to watch accordingly
-        files: ["bower_components/bootstrap/less/*.less"],
+        files: ["bower_components/bootstrap/less/*.less", "<%= yeoman.app %>/styles/less/*.less"],
         tasks: ["less"]
       },
       gruntfile: {
@@ -215,7 +215,8 @@ module.exports = function (grunt) {
             },
             files: {
                 // compilation.css  :  source.less
-                "bower_components/bootstrap/dist/css/bootstrap.css": "bower_components/bootstrap/less/bootstrap.less"
+                "bower_components/bootstrap/dist/css/bootstrap.css": "bower_components/bootstrap/less/bootstrap.less",
+                "<%= yeoman.app %>/styles/dist/style.css": "<%= yeoman.app %>/styles/less/style.less"
             }
         }
     },
