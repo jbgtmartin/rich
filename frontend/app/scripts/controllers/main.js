@@ -7,8 +7,10 @@
  * # MainCtrl
  * Controller of the frontendApp
  */
-angular.module('frontendApp')
-	.controller('MainCtrl', ['$scope', function ($scope) {
+
+var app = angular.module('frontendApp');
+
+app.controller('MainCtrl', ['$scope', function ($scope) {
 		$scope.todos = ['Item 1', 'Item 2', 'Item 3'];
 
 		$scope.addTodo = function() {

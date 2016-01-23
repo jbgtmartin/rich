@@ -1,10 +1,4 @@
 
-#websites_list_wrapper {
-  border: 1px solid #ddd;
-  border-bottom: none;
-  padding: 0;
-}
-
 #websites_list  {
   list-style: none;
   padding: 0;
@@ -13,7 +7,8 @@
 
 #websites_list > li {
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
+  border-top: none;
   cursor: pointer;
   transition: all 0.5s ease;
 }
@@ -25,4 +20,38 @@
 #websites_list > li.active:hover,
 #websites_list > li.active:focus {
   background-color: #4592E3;
+}
+
+.keyword_weight_bar {
+  height: 20px;
+  padding-left: 4px;
+  background-color: #4592E3;
+  color: white;
+  transition: width 1s ease;
+}
+
+#websites-search-bar {
+  margin-bottom: 0;
+}
+
+#websites-search-bar input {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.inner-addon {
+  position: relative;
+}
+
+.inner-addon.left-addon input {
+  padding-left: 30px;
+}
+
+.inner-addon i {
+  position: absolute;
+}
+
+.inner-addon.left-addon i {
+  top: 10px;
+  left: 10px;
 }

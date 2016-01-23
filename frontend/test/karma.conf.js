@@ -34,6 +34,10 @@ module.exports = function(config) {
       'bower_components/jquery-ui/jquery-ui.js',
       'bower_components/angular-ui-sortable/sortable.js',
       'bower_components/angular-local-storage/dist/angular-local-storage.js',
+      'bower_components/Chart.js/Chart.js',
+      'bower_components/chartjs/Chart.js',
+      'bower_components/angular-chart.js/dist/angular-chart.js',
+      'bower_components/Chart.HorizontalBar.js/Chart.HorizontalBar.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       "app/scripts/**/*.js",

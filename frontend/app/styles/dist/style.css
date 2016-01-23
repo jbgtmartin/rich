@@ -46,3 +46,18 @@
   top: 10px;
   left: 10px;
 }
+.input-group input {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  height: auto;
+}
+.input-group .btn {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  padding: 0;
+}
+.input-group .btn-primary {
+  color: #4592E3;
+}

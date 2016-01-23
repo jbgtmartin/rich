@@ -55,7 +55,7 @@ module.exports = function (grunt) {
       less:{
         // if any .less file changes in directory "src/main/less/" run the "less"-task.
         // change folders to watch accordingly
-        files: ["bower_components/bootstrap/less/*.less", "<%= yeoman.app %>/styles/less/*.less"],
+        files: ["bower_components/bootstrap/less/*.less","bower_components/bootstrap/less/mixins/*.less", "<%= yeoman.app %>/styles/less/*.less"],
         tasks: ["less"]
       },
       gruntfile: {

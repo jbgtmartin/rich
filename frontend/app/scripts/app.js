@@ -19,7 +19,8 @@ angular
     'ngSanitize',
     'ngTouch',
     'ui.sortable',
-    'LocalStorageModule'
+    'LocalStorageModule',
+    'chart.js'
   ])
   .config(function ($routeProvider) {
     $routeProvider
