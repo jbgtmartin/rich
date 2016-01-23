@@ -1,0 +1,20 @@
+
+<div ng-init="active_id=4">
+	<h1>Dashboard</h1>
+  	<div id="websites_list_wrapper" class="col-md-3">
+  		<ul id="websites_list" ng-model="request_data">
+  			<li ng-repeat="website in all_websites"  ng-click="changeWebsite(website._id)" ng-class="{active : active._id === website._id}">
+  				<h4>{{website._id}}</h4>
+  				<p>{{website.url}}</p>
+  			</li>
+  		</ul>
+	</div>
+	<div id="website_dashboard_wrapper" class="col-md-9">
+		<div id="website_dashboard">
+			<h2>{{active._id}}</h2>
+			<ul>
+				<li ng-repeat="(key, val) in active"><b>{{key}}:</b> {{val}}</li>
+			</ul>
+		</div>
+	</div>
+</div>

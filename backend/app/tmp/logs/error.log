@@ -1,19 +1,1826 @@
-2016-01-17 16:13:08 Error: [MissingControllerException] Controller class HomeController could not be found.
+2015-11-27 16:34:35 Error: Fatal Error (4): parse error, expecting `"function (T_FUNCTION)"' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/AppController.php, line 36]
+2015-11-27 16:34:35 Error: [FatalErrorException] parse error, expecting `"function (T_FUNCTION)"'
+Request URL: /rich/backend/
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 36)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 36, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 36, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 16:36:55 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-27 16:37:06 Error: Fatal Error (4): parse error, expecting `"function (T_FUNCTION)"' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/AppController.php, line 42]
+2015-11-27 16:37:06 Error: [FatalErrorException] parse error, expecting `"function (T_FUNCTION)"'
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 42)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 42, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 42, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 16:37:25 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-27 16:37:26 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-27 16:38:37 Error: [MissingControllerException] Controller class HomeController could not be found.
 Exception Attributes: array (
   'class' => 'HomeController',
   'plugin' => NULL,
 )
 Request URL: /rich/backend/home
 Stack Trace:
-#0 /Users/louisduperier/Web/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
-2016-01-17 16:13:28 Error: Fatal Error (1): Class 'String' not found in [/Users/louisduperier/Web/rich/backend/app/Plugin/Mongodb/Model/Datasource/MongodbSource.php, line 1476]
-2016-01-17 16:13:28 Error: [FatalErrorException] Class 'String' not found
-Request URL: /rich/backend/pages/home
+2015-11-27 16:38:45 Error: [MissingActionException] Action UsersController::login() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'login',
+)
+Request URL: /rich/backend/users/login
 Stack Trace:
-#0 /Users/louisduperier/Web/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Class 'String' ...', '/Users/louisdup...', 1476)
-#1 [internal function]: ErrorHandler::handleError(1, 'Class 'String' ...', '/Users/louisdup...', 1476, Array)
-#2 /Users/louisduperier/Web/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Class 'String' ...', '/Users/louisdup...', 1476, Array)
-#3 /Users/louisduperier/Web/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-27 16:40:07 Error: [MissingViewException] View file "Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/login.ctp',
+)
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-27 16:40:17 Error: [MissingViewException] View file "Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/login.ctp',
+)
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-27 16:40:18 Error: [MissingViewException] View file "Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/login.ctp',
+)
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-27 16:41:29 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 16:42:00 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 16:42:00 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 16:42:12 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 16:42:13 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 16:42:25 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 16:42:25 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 16:42:43 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 16:42:44 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 16:42:44 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 16:42:44 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 16:42:44 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 16:42:45 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 16:42:45 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 16:42:45 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 16:42:45 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 16:42:45 Error: [MissingControllerException] Controller class HomeController could not be found.
+Exception Attributes: array (
+  'class' => 'HomeController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/home
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 16:45:13 Error: Fatal Error (64): Cannot redeclare UsersController::beforeFilter() in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 70]
+2015-11-27 16:45:13 Error: [FatalErrorException] Cannot redeclare UsersController::beforeFilter()
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/JB/Web/_...', 70)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/JB/Web/_...', 70, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/JB/Web/_...', 70, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 16:45:18 Error: Fatal Error (64): Cannot redeclare UsersController::beforeFilter() in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 70]
+2015-11-27 16:45:18 Error: [FatalErrorException] Cannot redeclare UsersController::beforeFilter()
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/JB/Web/_...', 70)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/JB/Web/_...', 70, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/JB/Web/_...', 70, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 16:45:19 Error: Fatal Error (64): Cannot redeclare UsersController::beforeFilter() in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 70]
+2015-11-27 16:45:19 Error: [FatalErrorException] Cannot redeclare UsersController::beforeFilter()
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/JB/Web/_...', 70)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/JB/Web/_...', 70, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/JB/Web/_...', 70, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 16:47:23 Error: Fatal Error (64): Cannot redeclare UsersController::beforeFilter() in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 70]
+2015-11-27 16:47:23 Error: [FatalErrorException] Cannot redeclare UsersController::beforeFilter()
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', '/Users/JB/Web/_...', 70)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', '/Users/JB/Web/_...', 70, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', '/Users/JB/Web/_...', 70, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 16:48:02 Error: [MissingViewException] View file "Users/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/add.ctp',
+)
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-27 16:48:38 Error: Fatal Error (1): Call to a member function success() on a non-object in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 26]
+2015-11-27 16:48:38 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 16:49:38 Error: Fatal Error (1): Call to a member function success() on a non-object in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 26]
+2015-11-27 16:49:38 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 16:50:29 Error: Fatal Error (1): Call to a member function success() on a non-object in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 26]
+2015-11-27 16:50:29 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 16:50:31 Error: Fatal Error (1): Call to a member function success() on a non-object in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 26]
+2015-11-27 16:50:31 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 16:52:41 Error: Fatal Error (1): Call to a member function success() on a non-object in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 26]
+2015-11-27 16:52:41 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 16:52:49 Error: Fatal Error (1): Call to a member function success() on a non-object in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 26]
+2015-11-27 16:52:49 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 16:54:24 Error: Fatal Error (1): Call to a member function success() on a non-object in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 26]
+2015-11-27 16:54:24 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 16:55:00 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/Users/JB/Web/_localhost/rich/backend/app/Controller/AppController.php, line 39]
+2015-11-27 16:55:00 Error: [FatalErrorException] Call to a member function allow() on a non-object
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/JB/Web/_...', 39)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/JB/Web/_...', 39, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/JB/Web/_...', 39, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 16:55:09 Error: Fatal Error (1): Call to a member function success() on a non-object in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 26]
+2015-11-27 16:55:09 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 16:56:07 Error: Fatal Error (1): Call to undefined method SessionComponent::setFlashSuccess() in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 26]
+2015-11-27 16:56:07 Error: [FatalErrorException] Call to undefined method SessionComponent::setFlashSuccess()
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/JB/Web/_...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/JB/Web/_...', 26, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/JB/Web/_...', 26, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 16:56:26 Error: Fatal Error (1): Call to a member function success() on a non-object in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 26]
+2015-11-27 16:56:26 Error: [FatalErrorException] Call to a member function success() on a non-object
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/JB/Web/_...', 26, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 16:56:50 Error: [MissingViewException] View file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /rich/backend/users
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-27 16:57:04 Error: [MissingViewException] View file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /rich/backend/users
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-27 17:01:13 Error: [MissingViewException] View file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /rich/backend/users
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-27 17:01:18 Error: [MissingControllerException] Controller class AddController could not be found.
+Exception Attributes: array (
+  'class' => 'AddController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 17:18:21 Error: [MissingControllerException] Controller class PostsController could not be found.
+Exception Attributes: array (
+  'class' => 'PostsController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/posts
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 17:24:44 Error: [MissingControllerException] Controller class Posts.jsonController could not be found.
+Exception Attributes: array (
+  'class' => 'Posts.jsonController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/posts.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 17:25:46 Error: [MissingControllerException] Controller class Posts.jsonController could not be found.
+Exception Attributes: array (
+  'class' => 'Posts.jsonController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/posts.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 17:26:41 Error: [MissingControllerException] Controller class Posts.jsonController could not be found.
+Exception Attributes: array (
+  'class' => 'Posts.jsonController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/posts.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 18:37:07 Error: [MissingActionException] Action PostsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'PostsController',
+  'action' => 'view',
+)
+Request URL: /rich/backend/posts/1.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#2 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-27 18:46:14 Error: [MissingControllerException] Controller class Posts.jsonController could not be found.
+Exception Attributes: array (
+  'class' => 'Posts.jsonController',
+  'plugin' => NULL,
+)
+Request URL: /rich/backend/posts.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-11-27 19:24:36 Error: [MissingViewException] View file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /rich/backend/users
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-27 19:24:40 Error: [MissingViewException] View file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /rich/backend/users
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-27 19:24:55 Error: [MissingViewException] View file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /rich/backend/users
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-27 19:25:39 Error: [MissingViewException] View file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /rich/backend/users
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-27 19:25:42 Error: [MissingViewException] View file "Users/index.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/index.ctp',
+)
+Request URL: /rich/backend/users
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-27 23:43:19 Error: Fatal Error (1): Call to undefined method UsersController::eventManager() in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 8]
+2015-11-27 23:43:19 Error: [FatalErrorException] Call to undefined method UsersController::eventManager()
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/JB/Web/_...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/JB/Web/_...', 8, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/JB/Web/_...', 8, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-27 23:58:49 Error: [MissingViewException] View file "Users/Elements/ajax_return.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/Elements/ajax_return.ctp',
+)
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName('Elements/ajax_r...')
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render('Elements/ajax_r...', NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/app/Controller/AppController.php(46): Controller->render('Elements/ajax_r...')
+#3 /Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php(6): AppController->beforeFilter()
+#4 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#5 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#8 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-27 23:58:54 Error: [MissingViewException] View file "Users/Elements/ajax_return.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/Elements/ajax_return.ctp',
+)
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName('Elements/ajax_r...')
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render('Elements/ajax_r...', NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/app/Controller/AppController.php(46): Controller->render('Elements/ajax_r...')
+#3 /Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php(6): AppController->beforeFilter()
+#4 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#5 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#8 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-27 23:59:18 Error: [MissingViewException] View file "Users/Elements/ajax_return.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/Elements/ajax_return.ctp',
+)
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName('Elements/ajax_r...')
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render('Elements/ajax_r...', NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/app/Controller/AppController.php(47): Controller->render('Elements/ajax_r...')
+#3 /Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php(6): AppController->beforeFilter()
+#4 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#5 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#8 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-27 23:59:18 Error: [MissingViewException] View file "Users/Elements/ajax_return.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/Elements/ajax_return.ctp',
+)
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName('Elements/ajax_r...')
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render('Elements/ajax_r...', NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/app/Controller/AppController.php(47): Controller->render('Elements/ajax_r...')
+#3 /Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php(6): AppController->beforeFilter()
+#4 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#5 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#8 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-27 23:59:20 Error: [MissingViewException] View file "Users/Elements/ajax_return.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/Elements/ajax_return.ctp',
+)
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName('Elements/ajax_r...')
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render('Elements/ajax_r...', NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/app/Controller/AppController.php(47): Controller->render('Elements/ajax_r...')
+#3 /Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php(6): AppController->beforeFilter()
+#4 [internal function]: UsersController->beforeFilter(Object(CakeEvent))
+#5 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Event/CakeEventManager.php(243): call_user_func(Array, Object(CakeEvent))
+#6 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(676): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#8 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2015-11-28 00:01:37 Error: [MissingViewException] View file "Users/Elements/ajax_return.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/Elements/ajax_return.ctp',
+)
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName('Elements/ajax_r...')
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render('Elements/ajax_r...', NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php(23): Controller->render('Elements/ajax_r...')
+#3 [internal function]: UsersController->add()
+#4 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-28 00:01:49 Error: [MissingViewException] View file "Users/Elements/ajax_return.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/Elements/ajax_return.ctp',
+)
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName('Elements/ajax_r...')
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render('Elements/ajax_r...', NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php(23): Controller->render('Elements/ajax_r...')
+#3 [internal function]: UsersController->add()
+#4 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-28 00:01:49 Error: [MissingViewException] View file "Users/Elements/ajax_return.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/Elements/ajax_return.ctp',
+)
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName('Elements/ajax_r...')
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render('Elements/ajax_r...', NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php(23): Controller->render('Elements/ajax_r...')
+#3 [internal function]: UsersController->add()
+#4 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#5 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#6 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#7 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2015-11-28 00:03:27 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/JB/Web/_localhost/rich/backend/lib/Cake/Cache/Engine/FileEngine.php, line 194]
+2015-11-28 00:03:27 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/JB/Web/_...', 194)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/JB/Web/_...', 194, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/JB/Web/_...', 194, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:03:39 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/JB/Web/_localhost/rich/backend/app/Plugin/DebugKit/Controller/Component/ToolbarComponent.php, line 412]
+2015-11-28 00:03:39 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/JB/Web/_...', 412)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/JB/Web/_...', 412, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/JB/Web/_...', 412, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:04:43 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/JB/Web/_localhost/rich/backend/lib/Cake/Cache/Engine/FileEngine.php, line 194]
+2015-11-28 00:04:43 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/JB/Web/_...', 194)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/JB/Web/_...', 194, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/JB/Web/_...', 194, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:04:47 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/JB/Web/_localhost/rich/backend/lib/Cake/Cache/Engine/FileEngine.php, line 194]
+2015-11-28 00:04:47 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/JB/Web/_...', 194)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/JB/Web/_...', 194, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/JB/Web/_...', 194, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:05:11 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/JB/Web/_localhost/rich/backend/lib/Cake/Cache/Engine/FileEngine.php, line 194]
+2015-11-28 00:05:11 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/JB/Web/_...', 194)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/JB/Web/_...', 194, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/JB/Web/_...', 194, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:05:14 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/JB/Web/_localhost/rich/backend/lib/Cake/Cache/Engine/FileEngine.php, line 194]
+2015-11-28 00:05:14 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/JB/Web/_...', 194)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/JB/Web/_...', 194, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/JB/Web/_...', 194, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:05:15 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/JB/Web/_localhost/rich/backend/lib/Cake/Cache/Engine/FileEngine.php, line 194]
+2015-11-28 00:05:15 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/JB/Web/_...', 194)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/JB/Web/_...', 194, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/JB/Web/_...', 194, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:05:15 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/JB/Web/_localhost/rich/backend/app/Plugin/DebugKit/Controller/Component/ToolbarComponent.php, line 497]
+2015-11-28 00:05:15 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/JB/Web/_...', 497)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/JB/Web/_...', 497, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/JB/Web/_...', 497, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:05:15 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/JB/Web/_localhost/rich/backend/lib/Cake/Cache/Engine/FileEngine.php, line 135]
+2015-11-28 00:05:15 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/JB/Web/_...', 135)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/JB/Web/_...', 135, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/JB/Web/_...', 135, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:05:15 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/JB/Web/_localhost/rich/backend/lib/Cake/Cache/Engine/FileEngine.php, line 135]
+2015-11-28 00:05:15 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/JB/Web/_...', 135)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/JB/Web/_...', 135, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/JB/Web/_...', 135, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:05:16 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/JB/Web/_localhost/rich/backend/lib/Cake/Cache/Engine/FileEngine.php, line 194]
+2015-11-28 00:05:16 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/JB/Web/_...', 194)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/JB/Web/_...', 194, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/JB/Web/_...', 194, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:05:17 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/JB/Web/_localhost/rich/backend/lib/Cake/Cache/Engine/FileEngine.php, line 180]
+2015-11-28 00:05:17 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/JB/Web/_...', 180)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/JB/Web/_...', 180, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/JB/Web/_...', 180, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:05:17 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/JB/Web/_localhost/rich/backend/lib/Cake/Cache/Engine/FileEngine.php, line 194]
+2015-11-28 00:05:17 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/JB/Web/_...', 194)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/JB/Web/_...', 194, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/JB/Web/_...', 194, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:05:18 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/JB/Web/_localhost/rich/backend/app/Plugin/DebugKit/Controller/Component/ToolbarComponent.php, line 0]
+2015-11-28 00:05:18 Error: [FatalErrorException] Maximum execution time of 30 seconds exceeded
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Maximum executi...', '/Users/JB/Web/_...', 0)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum executi...', '/Users/JB/Web/_...', 0, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Maximum executi...', '/Users/JB/Web/_...', 0, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:06:31 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:06:31 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:07:11 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:07:11 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:07:23 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:07:23 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:07:54 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:07:54 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:07:56 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:07:56 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:08:10 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:08:10 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:08:11 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:08:11 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:09:30 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:09:30 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:09:31 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:09:31 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/add
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:10:02 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:10:02 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:10:05 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:10:05 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:10:19 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:10:19 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:10:20 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:10:20 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:10:20 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:10:20 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:10:21 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:10:21 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:10:21 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:10:21 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:10:21 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:10:21 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:10:21 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:10:21 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:10:22 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:10:22 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:10:22 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:10:22 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:10:22 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:10:22 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:10:24 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:10:24 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/logout
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:10:28 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:10:28 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:10:51 Error: Fatal Error (4): parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$'' in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 29]
+2015-11-28 00:10:51 Error: [FatalErrorException] parse error, expecting `"identifier (T_STRING)"' or `"variable (T_VARIABLE)"' or `'{'' or `'$''
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 29, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 00:15:27 Error: Fatal Error (1): Maximum execution time of 30 seconds exceeded in [/Users/JB/Web/_localhost/rich/backend/app/Plugin/DebugKit/Controller/Component/ToolbarComponent.php, line 0]
+2015-11-28 00:49:38 Error: [MissingActionException] Action UsersController::add.json() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add.json',
+)
+Request URL: /rich/backend/users/add.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-28 00:50:41 Error: [MissingActionException] Action UsersController::add.json() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add.json',
+)
+Request URL: /rich/backend/users/add.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-28 00:50:47 Error: [MissingActionException] Action UsersController::add.json() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsersController',
+  'action' => 'add.json',
+)
+Request URL: /rich/backend/users/add.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#2 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-11-28 15:07:34 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.username' in 'where clause'
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(1118): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(130): Model->find('first', Array)
+#7 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(79): BaseAuthenticate->_findUser('test@test.test', 'test')
+#8 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Component/AuthComponent.php(764): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Component/AuthComponent.php(609): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php(83): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-11-28 15:08:17 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.username' in 'where clause'
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `User`.`...', Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(1118): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(3031): DboSource->read(Object(User), Array)
+#5 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(3003): Model->_readDataSource('first', Array)
+#6 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(130): Model->find('first', Array)
+#7 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(79): BaseAuthenticate->_findUser('test@test.test', 'test')
+#8 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Component/AuthComponent.php(764): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Component/AuthComponent.php(609): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php(83): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#14 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-11-28 15:32:33 Error: [MissingViewException] View file "Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/login.ctp',
+)
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-28 15:32:43 Error: [MissingViewException] View file "Users/login.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/login.ctp',
+)
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-11-28 15:34:59 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 85]
+2015-11-28 15:34:59 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 85)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 85, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 85, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 15:35:06 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 85]
+2015-11-28 15:35:06 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 85)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 85, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 85, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-28 15:35:11 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 85]
+2015-11-28 15:35:11 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 85)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 85, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 85, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-11-29 22:12:01 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(3626): ConnectionManager::getDataSource('default')
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#4 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(3653): Model->setSource('users')
+#5 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#6 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 /Users/JB/Web/_localhost/rich/backend/app/View/Users/login.ctp(3): FormHelper->create('User')
+#9 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(971): include('/Users/JB/Web/_...')
+#10 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(933): View->_evaluate('/Users/JB/Web/_...', Array)
+#11 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(473): View->_render('/Users/JB/Web/_...')
+#12 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-11-30 02:06:01 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(3626): ConnectionManager::getDataSource('default')
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#4 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(3653): Model->setSource('users')
+#5 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#6 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 /Users/JB/Web/_localhost/rich/backend/app/View/Users/login.ctp(3): FormHelper->create('User')
+#9 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(971): include('/Users/JB/Web/_...')
+#10 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(933): View->_evaluate('/Users/JB/Web/_...', Array)
+#11 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(473): View->_render('/Users/JB/Web/_...')
+#12 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-11-30 02:06:45 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /rich/backend/users/login
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(3626): ConnectionManager::getDataSource('default')
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(1155): Model->setDataSource('default')
+#4 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(3653): Model->setSource('users')
+#5 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(1387): Model->getDataSource()
+#6 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#7 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/Helper/FormHelper.php(468): FormHelper->_introspectModel('User', 'fields')
+#8 /Users/JB/Web/_localhost/rich/backend/app/View/Users/login.ctp(3): FormHelper->create('User')
+#9 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(971): include('/Users/JB/Web/_...')
+#10 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(933): View->_evaluate('/Users/JB/Web/_...', Array)
+#11 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(473): View->_render('/Users/JB/Web/_...')
+#12 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#13 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#14 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#15 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-12-08 18:45:48 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 44]
+2015-12-08 18:45:48 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/add.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 44, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 44, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-08 18:46:52 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 44]
+2015-12-08 18:46:52 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/add.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 44, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 44, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-08 18:47:57 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 44]
+2015-12-08 18:47:57 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/add.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 44)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 44, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 44, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-08 18:48:04 Error: [MissingViewException] View file "Users/json/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/json/add.ctp',
+)
+Request URL: /rich/backend/users/add.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/JsonView.php(107): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): JsonView->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-08 18:48:16 Error: [MissingViewException] View file "Users/json/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/json/add.ctp',
+)
+Request URL: /rich/backend/users/add.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/JsonView.php(107): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): JsonView->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-10 14:43:35 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 88]
+2015-12-10 14:43:35 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 88, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 88, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 14:44:11 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 88]
+2015-12-10 14:44:11 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 88, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 88, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 14:45:05 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 88]
+2015-12-10 14:45:05 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 88, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 88, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 14:45:55 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 88]
+2015-12-10 14:45:55 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 88, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 88, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 14:45:59 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 88]
+2015-12-10 14:45:59 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 88, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 88, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 14:46:35 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 84]
+2015-12-10 14:46:35 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 84)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 84, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 84, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 14:47:26 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 84]
+2015-12-10 14:47:26 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 84)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 84, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 84, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 14:48:30 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 91]
+2015-12-10 14:48:30 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 91)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 91, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 91, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 14:49:33 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 91]
+2015-12-10 14:49:33 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/add.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 91)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 91, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 91, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 14:49:46 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 91]
+2015-12-10 14:49:46 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/add.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 91)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 91, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 91, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 14:50:55 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 91]
+2015-12-10 14:50:55 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 91)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 91, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 91, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 14:51:35 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 91]
+2015-12-10 14:51:35 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/add.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 91)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 91, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 91, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 14:52:06 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 88]
+2015-12-10 14:52:06 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/add.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 88)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 88, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 88, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 14:54:59 Error: Fatal Error (1): Call to a member function findByEmail() on a non-object in [/Users/JB/Web/_localhost/rich/backend/app/Model/User.php, line 41]
+2015-12-10 14:54:59 Error: [FatalErrorException] Call to a member function findByEmail() on a non-object
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/JB/Web/_...', 41)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/JB/Web/_...', 41, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/JB/Web/_...', 41, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 15:07:04 Error: [MissingViewException] View file "Users/getapikey.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/getapikey.ctp',
+)
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-10 15:07:12 Error: [MissingViewException] View file "Users/getapikey.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/getapikey.ctp',
+)
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-10 15:07:58 Error: Fatal Error (64): Only variables can be passed by reference in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 23]
+2015-12-10 15:07:58 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Only variables ...', '/Users/JB/Web/_...', 23)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/Users/JB/Web/_...', 23, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/Users/JB/Web/_...', 23, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 15:08:23 Error: Fatal Error (64): Only variables can be passed by reference in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 23]
+2015-12-10 15:08:23 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Only variables ...', '/Users/JB/Web/_...', 23)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/Users/JB/Web/_...', 23, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/Users/JB/Web/_...', 23, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 15:08:24 Error: Fatal Error (64): Only variables can be passed by reference in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 23]
+2015-12-10 15:08:24 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Only variables ...', '/Users/JB/Web/_...', 23)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/Users/JB/Web/_...', 23, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/Users/JB/Web/_...', 23, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 15:09:53 Error: [MissingViewException] View file "Users/getapikey.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/getapikey.ctp',
+)
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-10 15:10:00 Error: [MissingViewException] View file "Users/getapikey.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/getapikey.ctp',
+)
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-10 15:10:10 Error: [MissingViewException] View file "Users/getapikey.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/getapikey.ctp',
+)
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-10 15:10:15 Error: [MissingViewException] View file "Users/getapikey.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/getapikey.ctp',
+)
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-10 15:10:32 Error: [MissingViewException] View file "Users/getapikey.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/getapikey.ctp',
+)
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-10 15:11:33 Error: [MissingViewException] View file "Users/getapikey.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/getapikey.ctp',
+)
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-10 15:17:15 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/JB/Web/_localhost/rich/backend/app/Model/User.php, line 55]
+2015-12-10 15:17:15 Error: [FatalErrorException] parse error, expecting `')''
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/JB/Web/_...', 55)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/JB/Web/_...', 55, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/JB/Web/_...', 55, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 15:18:07 Error: Fatal Error (1): Call to a member function save() on a non-object in [/Users/JB/Web/_localhost/rich/backend/app/Model/User.php, line 58]
+2015-12-10 15:18:07 Error: [FatalErrorException] Call to a member function save() on a non-object
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/JB/Web/_...', 58)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/JB/Web/_...', 58, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/JB/Web/_...', 58, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 15:19:26 Error: [MissingViewException] View file "Users/getapikey.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/getapikey.ctp',
+)
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-10 15:21:25 Error: Fatal Error (4): parse error in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 24]
+2015-12-10 15:21:25 Error: [FatalErrorException] parse error
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'parse error', '/Users/JB/Web/_...', 24)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/JB/Web/_...', 24, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/JB/Web/_...', 24, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 15:21:54 Error: [MissingViewException] View file "Users/getapikey.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/getapikey.ctp',
+)
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-10 15:23:31 Error: [MissingViewException] View file "Users/getapikey.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/getapikey.ctp',
+)
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-10 15:24:41 Error: [MissingViewException] View file "Users/getapikey.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/getapikey.ctp',
+)
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-10 15:24:57 Error: Fatal Error (64): Only variables can be passed by reference in [/Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php, line 23]
+2015-12-10 15:24:57 Error: [FatalErrorException] Only variables can be passed by reference
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Error/ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Only variables ...', '/Users/JB/Web/_...', 23)
+#1 [internal function]: ErrorHandler::handleError(64, 'Only variables ...', '/Users/JB/Web/_...', 23, Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(933): call_user_func('ErrorHandler::h...', 64, 'Only variables ...', '/Users/JB/Web/_...', 23, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Core/App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-12-10 15:26:01 Error: [MissingViewException] View file "Users/getapikey.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/getapikey.ctp',
+)
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-10 15:36:26 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('update', Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(669): DboSource->execute('update', Array, Array)
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(612): DboSource->fetchAll('update', Array, Array)
+#4 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(827): DboSource->query('update', Array, Object(User))
+#5 /Users/JB/Web/_localhost/rich/backend/app/Model/User.php(67): Model->__call('update', Array)
+#6 /Users/JB/Web/_localhost/rich/backend/app/Model/User.php(67): User->update(Array)
+#7 /Users/JB/Web/_localhost/rich/backend/app/Model/User.php(43): User->generateApiKey(Array)
+#8 /Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php(88): User->sign_in(Array)
+#9 [internal function]: UsersController->login()
+#10 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#11 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#13 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2015-12-10 15:37:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.User' in 'field list'
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('UPDATE `rich`.`...', Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/Database/Mysql.php(415): DboSource->execute('UPDATE `rich`.`...')
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(2663): Mysql->update(Object(User), Array, NULL, true)
+#4 /Users/JB/Web/_localhost/rich/backend/app/Model/User.php(67): Model->updateAll(Array)
+#5 /Users/JB/Web/_localhost/rich/backend/app/Model/User.php(43): User->generateApiKey(Array)
+#6 /Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php(88): User->sign_in(Array)
+#7 [internal function]: UsersController->login()
+#8 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-12-10 15:37:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.User' in 'field list'
+Request URL: /rich/backend/users/login.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('UPDATE `rich`.`...', Array)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Datasource/Database/Mysql.php(415): DboSource->execute('UPDATE `rich`.`...')
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Model/Model.php(2663): Mysql->update(Object(User), Array, NULL, true)
+#4 /Users/JB/Web/_localhost/rich/backend/app/Model/User.php(67): Model->updateAll(Array)
+#5 /Users/JB/Web/_localhost/rich/backend/app/Model/User.php(43): User->generateApiKey(Array)
+#6 /Users/JB/Web/_localhost/rich/backend/app/Controller/UsersController.php(88): User->sign_in(Array)
+#7 [internal function]: UsersController->login()
+#8 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#11 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-12-10 17:33:28 Error: [MissingViewException] View file "Users/json/add.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/json/add.ctp',
+)
+Request URL: /rich/backend/users/add.json
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/JsonView.php(107): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): JsonView->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-12 02:47:08 Error: [MissingViewException] View file "Users/getapikey.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/getapikey.ctp',
+)
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-12 02:48:02 Error: [MissingViewException] View file "Users/getapikey.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/getapikey.ctp',
+)
+Request URL: /rich/backend/users/getapikey
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-12-12 03:02:50 Error: [MissingViewException] View file "Users/test.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Users/test.ctp',
+)
+Request URL: /rich/backend/users/test
+Stack Trace:
+#0 /Users/JB/Web/_localhost/rich/backend/lib/Cake/View/View.php(470): View->_getViewFileName(NULL)
+#1 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Controller/Controller.php(960): View->render(NULL, NULL)
+#2 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(200): Controller->render()
+#3 /Users/JB/Web/_localhost/rich/backend/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#4 /Users/JB/Web/_localhost/rich/backend/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}

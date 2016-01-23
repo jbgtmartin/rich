@@ -77,7 +77,7 @@ module.exports = function (grunt) {
       },
       livereload: {
         options: {
-          open: true,
+          open: false, // prenvents from opening safari
           middleware: function (connect) {
             return [
               connect.static('.tmp'),
