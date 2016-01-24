@@ -1,24 +1,10 @@
 'use strict';
 
-/**
- * @ngdoc function
- * @name frontendApp.controller:MainCtrl
- * @description
- * # MainCtrl
- * Controller of the frontendApp
- */
 
-var app = angular.module('frontendApp');
+app.controller('MainCtrl', ['$scope', '$location', function ($scope, $location) {
 
-app.controller('MainCtrl', ['$scope', function ($scope) {
-		$scope.todos = ['Item 1', 'Item 2', 'Item 3'];
+	$scope.isActive = function(path) {
+		return $location.path() === path;
+	};
 
-		$scope.addTodo = function() {
-			$scope.todos.push($scope.todo);
-			$scope.todo = '';
-		};
-
-		$scope.removeTodo = function(index) {
-			$scope.todos.splice(index, 1);
-		};
-	}]);
+}]);

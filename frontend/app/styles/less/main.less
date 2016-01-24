@@ -1,4 +1,13 @@
 
+.navbar-logo {
+  position: absolute;
+  right: 0;
+}
+
+.navbar-logo > img {
+  height: 49px;
+}
+
 #websites_list  {
   list-style: none;
   padding: 0;
@@ -11,6 +20,14 @@
   border-top: none;
   cursor: pointer;
   transition: all 0.5s ease;
+
+  h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  p {
+    margin-bottom: 0;
+  }
 }
 #websites_list > li:hover,
 #websites_list > li:focus {
@@ -19,13 +36,13 @@
 #websites_list > li.active,
 #websites_list > li.active:hover,
 #websites_list > li.active:focus {
-  background-color: @blue;
+  background: linear-gradient(lighten(@orange, 25%), lighten(@orange, 15%));
 }
 
 .keyword_weight_bar {
   height: 20px;
   padding-left: 4px;
-  background-color: @blue;
+  background-color: @orange;
   color: white;
   transition: width 1s ease;
 }
@@ -56,7 +73,7 @@
   left: 10px;
 }
 
-.input-group {
+.table .input-group {
   input {
     border: none;
     box-shadow: none;
@@ -70,6 +87,6 @@
     padding: 0;
   }
   .btn-primary {
-    color: @blue;
+    color: @orange;
   }
 }
