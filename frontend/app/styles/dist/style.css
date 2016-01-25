@@ -1,16 +1,28 @@
-
-#websites_list  {
+.navbar-logo {
+  position: absolute;
+  right: 0;
+}
+.navbar-logo > img {
+  height: 49px;
+}
+#websites_list {
   list-style: none;
   padding: 0;
-  margin:0;
+  margin: 0;
 }
-
 #websites_list > li {
   padding: 10px;
   border: 1px solid #ddd;
   border-top: none;
   cursor: pointer;
   transition: all 0.5s ease;
+}
+#websites_list > li h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#websites_list > li p {
+  margin-bottom: 0;
 }
 #websites_list > li:hover,
 #websites_list > li:focus {
@@ -19,39 +31,47 @@
 #websites_list > li.active,
 #websites_list > li.active:hover,
 #websites_list > li.active:focus {
-  background-color: #4592E3;
+  background: linear-gradient(#fccb8e, #fbb45d);
 }
-
 .keyword_weight_bar {
   height: 20px;
   padding-left: 4px;
-  background-color: #4592E3;
+  background-color: #f99212;
   color: white;
   transition: width 1s ease;
 }
-
 #websites-search-bar {
   margin-bottom: 0;
 }
-
 #websites-search-bar input {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
-
 .inner-addon {
   position: relative;
 }
-
 .inner-addon.left-addon input {
   padding-left: 30px;
 }
-
 .inner-addon i {
   position: absolute;
 }
-
 .inner-addon.left-addon i {
   top: 10px;
   left: 10px;
+}
+.table .input-group input {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  height: auto;
+}
+.table .input-group .btn {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  padding: 0;
+}
+.table .input-group .btn-primary {
+  color: #f99212;
 }

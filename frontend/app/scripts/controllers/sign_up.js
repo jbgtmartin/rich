@@ -1,8 +1,7 @@
 'use strict';
 
 
-angular.module('frontendApp')
-  	.controller('SignUpCtrl', ['$scope', 'User', function ($scope, User) {
+app.controller('SignUpCtrl', ['$scope', 'User', function ($scope, User) {
 
 		$scope.submit = function(user) {
 			$scope.response = "Submitting...";
