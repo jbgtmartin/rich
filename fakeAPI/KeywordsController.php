@@ -4,7 +4,8 @@ class KeywordsController extends Controller {
 		$this->verifyArgs(['word', 'ppc']);
 
 		$query = ['_id' => new MongoId($site_id)];
-		$keywords = $this->m->adwords->findOne($query)['keywords'];
+		$site = $this->m->adwords->findOne($query);
+		$keywords = $site['keywords'];
 		if(array_key_exists($_GET['word'], $keywords))
 			$this->error('Ce mot clé existe déjà. Utilisez update.');
 		else {
@@ -13,7 +14,8 @@ class KeywordsController extends Controller {
 				'stats' => [
 				]
 			];
-			$this->m->adwords->update($query, ['keywords' => $keywords]);
+			$site['keywords'] = $keywords;
+			$this->m->adwords->update($query, $site);
 		}
 	}
 
@@ -43,20 +45,21 @@ class KeywordsController extends Controller {
 
 	public function generateStats($site_id) {
 		$query = ['_id' => new MongoId($site_id)];
-		$keywords = $this->m->adwords->findOne($query)['keywords'];
+		$site = $this->m->adwords->findOne($query);
+		$keywords = $site['keywords'];
 
 		foreach($keywords as $keyword => $data) {
 			if(empty($data['stats']))
-				$last_date = date('Y-m-d', strtotime('-1 day'));
+				$last_date = date('Y-m-d', strtotime('-5 day'));
 			else
 				$last_date = array_reverse(array_keys($data['stats']))[0];
 
 			while(strtotime($last_date) < strtotime('-1 day', strtotime(date('Y-m-d')))) {
 				$last_date = date('Y-m-d', strtotime('+1 day', strtotime($last_date)));
 				
-				$clicks = 12;
-				$views = 456;
-				$interest = 0.30;
+				$clicks = floor(rand(8, 13) / 10 * floatval($site['daily_budget']) / floatval($data['ppc']) * floatval($site['seed']));
+				$views = $clicks * rand(7, 20) * 4 * floatval($site['seed']);
+				$interest = floatval($site['seed']);
 				$bounce = (1 - $interest) * 100; #TODO : décroissance initiale rapide
 				$contacts = $clicks * $interest;
 				$duration = $interest * 3 * 60;
@@ -71,6 +74,7 @@ class KeywordsController extends Controller {
 			}
 		}
 
-		$this->m->adwords->update($query, ['keywords' => $keywords]);
+		$site['keywords'] = $keywords;
+		$this->m->adwords->update($query, $site);
 	}
 }

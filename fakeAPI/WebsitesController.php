@@ -10,8 +10,9 @@ class WebsitesController extends Controller
 			'text1' => $_GET['text1'],
 			'text2' => $_GET['text2'],
 			'place' => $_GET['place'],
-			'daily_budget' => $_GET['daily_budget']/100
-			'keywords' => []
+			'daily_budget' => $_GET['daily_budget'],
+			'keywords' => [],
+			'seed' => mt_rand(0, 3000)/10000
 		];
 
 		if(count($this->cursorToArray($this->m->adwords->find(['url' => $_GET['url']]))) >= 1)
