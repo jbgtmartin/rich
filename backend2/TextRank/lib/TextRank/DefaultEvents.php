@@ -48,12 +48,8 @@ class DefaultEvents
     public function filter_keywords(Array $keywords)
     {
         return array_filter($keywords, function ($keyword) {
-            if (is_numeric($keyword)) {
+            if (is_numeric($keyword) || preg_match('/[0-9]/', $keyword)) {
                 return false;
-            }
-
-            if ($keyword[0] == mb_strtoupper($keyword[0])) {
-                return true;
             }
             
             return mb_strlen($keyword) > 3;
@@ -69,6 +65,7 @@ class DefaultEvents
     public function get_words($text)
     {
         $words = preg_split('/(?:(^\p{P}+)|(\p{P}*\s+\p{P}*)|(\p{P}+$))/', $text, -1, PREG_SPLIT_NO_EMPTY | PREG_SPLIT_DELIM_CAPTURE);
-        return array_values(array_filter(array_map('trim', $words)));
+        $res = array_values(array_filter(array_map('trim', $words)));
+        return $res;
     }
 }

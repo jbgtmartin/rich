@@ -247,7 +247,7 @@ ils
 importe
 j
 je
-je 	juste
+juste
 jusqu
 jusque
 juste

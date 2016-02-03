@@ -45,6 +45,7 @@ use LanguageDetector\Detect;
 class Stopword extends DefaultEvents
 {
     protected $stopword;
+    protected $common_words;
     protected $lang;
 
     public function normalize_keywords(Array $keywords)
@@ -72,7 +73,8 @@ class Stopword extends DefaultEvents
 
         $keywords = array_filter($keywords, function ($word) {
             $word = mb_strtolower($word);
-            return empty($this->stopword[$word]);
+            $normalized_word = stemword($word, 'french', 'UTF_8');
+            return empty($this->stopword[$word]) && empty($this->common_words[$normalized_word]) && stristr($word, 'www') === false && stristr($word, '@') === false;
         });
 
         return $keywords;
@@ -88,18 +90,23 @@ class Stopword extends DefaultEvents
     }
     protected function getStopwords()
     {
-        static $stopwords;
-        if (empty($stopwords)) {
-            $stopwords = require __DIR__ . '/Stopword/Stopword.php';
-        }
-        return $stopwords;
+      //require __DIR__ . '/Stopword/Stopword.php';
+      static $stopwords;
+      $stopwords = [];
+      $words = file(__DIR__ . '/Stopword/french-stopwords.txt', FILE_IGNORE_NEW_LINES) 
+        //+ file(__DIR__ . '/Stopword/french-geo.txt', FILE_IGNORE_NEW_LINES)
+      ;
+      foreach($words as $w)
+        $stopwords[$w] = 1;
+      return ['french' => $stopwords];
     }
 
     public function get_words($text)
     {
         $detect    = $this->getClassifier();
         $stopwords = $this->getStopwords(); 
-        $lang = $detect->detect($text);
+
+        $lang = 'french';
         if (!is_string($lang)) {
             throw new \RuntimeException("Cannot detect the language of the text");
         }
@@ -107,6 +114,11 @@ class Stopword extends DefaultEvents
             throw new \RuntimeException("We dont have an stop word for {$lang}, please add it in " . __DIR__ . "/Stopword/{$lang}-stopwords.txt and run generate.php");
         }
         $this->stopword = $stopwords[$lang];
+        $this->common_words = [];
+        $common_words = $this->normalize_keywords(file(__DIR__ . '/Stopword/common-french.txt', FILE_IGNORE_NEW_LINES));
+        foreach($common_words as $cw)
+          $this->common_words[$cw] = 1;
+
         $this->lang     = $lang;
 
         return parent::get_words($text);
