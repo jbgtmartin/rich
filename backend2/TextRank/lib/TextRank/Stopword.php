@@ -74,7 +74,7 @@ class Stopword extends DefaultEvents
         $keywords = array_filter($keywords, function ($word) {
             $word = mb_strtolower($word);
             $normalized_word = stemword($word, 'french', 'UTF_8');
-            return empty($this->stopword[$word]) && empty($this->common_words[$normalized_word]) && stristr($word, 'www') === false && stristr($word, '@') === false;
+            return empty($this->stopword[$word]) && empty($this->common_words[$normalized_word]) && stristr($word, 'www') === false && stristr($word, '@') === false && stristr($word, '.com') === false && stristr($word, '.fr') === false;
         });
 
         return $keywords;
