@@ -200,4 +200,11 @@ class WebsitesController extends Controller
 		
 		return $adwords;
 	}
+
+	public function recompute() {
+		//1. Compute adwords score from the stats
+		//2. Refind new neighbors taking into account the adwords score
+		//3. Find potential new adwords to test
+		//4. Delete useless / bad quality keywords
+	}
 }
