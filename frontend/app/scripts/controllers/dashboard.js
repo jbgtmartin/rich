@@ -8,7 +8,7 @@ keywords/get/56a27411c9d9c1f2010041a8
 keywords/get/56a275dcc9d9c1f1010041a9/test
 keywords/add/56a275dcc9d9c1f1010041a9?word=testbis&ppc=1
 keywords/delete/56a275dcc9d9c1f1010041a9?word=testbis
-*/
+
 
 var db_websites = [
 	{
@@ -52,7 +52,7 @@ var db_keywords = [
 	}
 ];
 
-
+*/
 
 /**
  * @ngdoc function
@@ -63,57 +63,68 @@ var db_keywords = [
  */
 app.controller('DashboardCtrl', ['$scope', '$http', '$filter', function ($scope, $http, $filter) {
 
- //    $http({
-	// 	method: 'GET',
-	//   	url: base_url + 'backend2/api/websites/get/'
-	// }).then(function successCallback(response) {
-	//     $scope.all_websites = response.data;
-	//     displayWebsite(response.data[0]._id);
-	//   }, function errorCallback(response) {
-	//     // called asynchronously if an error occurs
-	//     // or server returns response with an error status.
-	//   });
-	$scope.all_websites = db_websites;
-	displayWebsite($scope.all_websites[0]._id);
+    $http({
+		method: 'GET',
+	  	url: base_url + 'backend2/api/websites/get/'
+	}).then(function successCallback(response) {
+	    $scope.all_websites = response.data;
+	    displayWebsite(response.data[0]._id);
+	  }, function errorCallback(response) {
+	    // called asynchronously if an error occurs
+	    // or server returns response with an error status.
+	  });
 
 	$scope.changeWebsite = function(id) {
 		displayWebsite(id);
 	};
 
 	$scope.addKeyword = function() {
-		var max_weight = Math.max.apply(Math,$scope.keywords.map(function(o){return o.weight;}));
-		$scope.keywords.push({
-			word: $scope.new_keyword,
-			weight: 1.2 * max_weight
-		});
-		$scope.keywords = calculateNormalizedWeights($scope.keywords);
+		$scope.website_keywords_max = 1.5 * $scope.website_keywords_max;
+		$scope.keywords[$scope.new_keyword] = $scope.website_keywords_max;
 	}
 
 	function displayWebsite(id) {
-		// $http({
-	 //  		method: 'GET',
-	 //  		url: base_url + 'backend2/api/websites/get/' + id + '/'
-		// }).then(function successCallback(response) {
-		// 		response.data[0].keywords = calculateNormalizedWeights(response.data[0].keywords);
-	 //    		$scope.active = response.data[0];
-		//   	}, function errorCallback(response) {
-		//     	// called asynchronously if an error occurs
-		//     	// or server returns response with an error status.
-		//   	});
-		var website = $filter('filter')(db_websites, {"_id": id})[0];
-		var website_keywords = $filter('filter')(db_keywords, {"website_id": id})[0];
-		$scope.active = website;
-		$scope.keywords = calculateNormalizedWeights(website_keywords.keywords);
+		$http({
+	  		method: 'GET',
+	  		url: base_url + 'backend2/api/websites/get/' + id + '/'
+		}).then(function successCallback(response) {
+				var website = response.data[0];
+				var website_keywords = sliceDictionnary(website.keywords, 20);
+				var minmax = getMinMax(website_keywords);
+				$scope.website_keywords_min = minmax["min"];
+				$scope.website_keywords_max = minmax["max"];
+				$scope.active = website;
+				$scope.keywords = website_keywords;
+
+		  	}, function errorCallback(response) {
+		    	// called asynchronously if an error occurs
+		    	// or server returns response with an error status.
+		  	});
 	}
 
-	function calculateNormalizedWeights(keywords) {
-		var max_weight = Math.max.apply(Math,keywords.map(function(o){return o.weight;}));
+	function sliceDictionnary(dict, limit) {
+		var new_dict = {};
+		var i = 0;
+		for(var k in dict) {
+			if(i < limit) {
+				new_dict[k] = parseFloat(dict[k]);
+				i++;
+			}
+		}
+		return new_dict;
+	}
 
-		for (var i = 0; i < keywords.length ; i++){
-			keywords[i].normalized_weight = keywords[i].weight / max_weight;
+	function getMinMax(keywords) {
+		var max = 0;
+		var min = 1;
+		var current;
+		for(var k in keywords) {
+			current = parseFloat(keywords[k]);
+			if(current > max) max = current;
+			if(current < min) min = current;
 		}
 
-		return keywords;
+		return {"min": min, "max": max};
 	}
 
 }]);

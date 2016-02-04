@@ -1,10 +1,14 @@
 
 <div class="container">
 
+	<div style="float: right">
+		<a class="btn btn-default" ng-href="#/register_website"><i class="fa fa-plus"></i> Add website</a>
+	</div>
+
 	<h1>Dashboard</h1>
 
 	<div class="row">
-		<div id="websites_list_wrapper" class="col-md-3">
+		<div id="websites_list_wrapper" class="col-md-4">
 			<div id="websites-search-bar" class="form-group inner-addon left-addon">
 				<input class="form-control" type="text" ng-model="search" placeholder="Recherche">
 				<i class="fa fa-search"></i>
@@ -18,18 +22,20 @@
 			</ul>
 		</div>
 
-		<div id="website_dashboard_wrapper" class="col-md-9">
+		<div id="website_dashboard_wrapper" class="col-md-8">
 			<div id="website_dashboard">
 				<h2>{{active.url}}</h2>
 				<ul>
-					<li ng-repeat="(key, val) in active"><b>{{key}}:</b> {{val}}</li>
+					<li><b>_id: </b>{{active._id}}</li>
+					<li><b>mail: </b>{{active.mail}}</li>
+					<li><b>place: </b>{{active.place}}</li>
+					<!-- <li><b>pages: </b>{{active.pages}}</li> -->
 				</ul>
 
 				<table class="table">
 					<tr>
-						<th class="col-xs-3">Keyword</th>
-						<th class="col-xs-2">Price per click</th>
-						<th class="col-xs-7">Weight</th>
+						<th class="col-xs-4">Keyword</th>
+						<th class="col-xs-8">Weight</th>
 					</tr>
 					<tr>
 						<td colspan="3">
@@ -43,12 +49,11 @@
 							</form>
 						</td>
 					</tr>
-					<tr ng-repeat="keyword in keywords | orderBy : 'normalized_weight' : true">
-						<td>{{keyword.word}}</td>
-						<td>{{keyword.ppc | currency:"€"}}</td>
+					<tr ng-repeat="(keyword, weight) in keywords">
+						<td>{{keyword}}</td>
 						<td>
-							<div class="keyword_weight_bar" style="width:{{keyword.normalized_weight * 100}}%">
-								{{keyword.weight | number:0}}
+							<div class="keyword_weight_bar" style="width:{{weight | normalize : website_keywords_min : website_keywords_max}}%">
+								{{weight | number:2}}
 							</div>
 						</td>
 					</tr>
