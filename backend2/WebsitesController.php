@@ -9,6 +9,13 @@ class WebsitesController extends Controller
 		$this->output($this->cursorToArray($cursor));
 	}
 
+	public function closest($id) {
+		$cursor = $this->m->websites->find(['_id' => new MongoId($id)]);
+		$doc = $this->cursorToArray($cursor)[0];
+
+		$this->findNeighbors($doc['type'], $doc['keywords']);
+	}
+
 	public function add() {
 		$this->verifyArgs(['url', 'mail', 'place', 'type']);
 
@@ -29,7 +36,7 @@ class WebsitesController extends Controller
 
 		$this->m->websites->insert($document);
 
-		//$this->output($document['_id']);
+		$this->output($document['_id']);
 	}
 
 	private function findPages($url) {
@@ -39,6 +46,7 @@ class WebsitesController extends Controller
 		$crawler = new \Arachnid\Crawler($url, 4);
 
 		$crawler->traverse();
+		
 
 		// Get link data
 		$links = $crawler->getLinks();
@@ -99,7 +107,29 @@ class WebsitesController extends Controller
 	}
 
 	private function findNeighbors($type, $keywords) {
-		
+		$queue = new SplPriorityQueue();
+		$cursor = $this->m->websites->find([]); 
+		foreach ($cursor as $doc) {
+			$d = $this->distance($type, $keywords, $doc['type'], $doc['keywords']);
+			$queue->insert($doc['url'], $d);
+		}
+
+		pr($queue);
+
+		for($i = 0; $i < 100 && !$queue->isEmpty(); $i++)
+			pr($queue->extract());
+	}
+
+	// distance inversée, le plus élevé est le meilleur
+	private function distance($typeA, $keywordsA, $typeB, $keywordsB) {
+		$distance = 0;
+		// if($typeA == $typeB) $distance += 10;
+
+		foreach($keywordsA as $k => $w) {
+			if(isset($keywordsB[$k]))
+				$distance += $keywordsB[$k] * $w;
+		}
+		return $distance;
 	}
 
 	public function massivedl() {
