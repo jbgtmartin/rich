@@ -1,0 +1,33 @@
+
+<div class="container">
+
+	<h1>Add a new website</h1>
+
+	<form action="" ng-submit="submit(website)">
+
+		<div class="input-group">
+			<span class="input-group-addon"><i class="fa fa-key"></i></span>
+			<input type="text" class="form-control" placeholder="Website url" ng-model="website.url">
+		</div>
+
+		<div class="input-group">
+			<span class="input-group-addon"><i class="fa fa-at"></i></span>
+			<input type="text" class="form-control" placeholder="E-mail address" ng-model="website.email">
+		</div>
+
+		<div class="input-group">
+			<span class="input-group-addon"><i class="fa fa-home"></i></span>
+			<input type="text" class="form-control" placeholder="Location" ng-model="website.place">
+		</div>
+
+		<div class="input-group">
+			<span class="input-group-addon"><i class="fa fa-home"></i></span>
+			<input type="text" class="form-control" placeholder="Type" ng-model="website.type">
+		</div>
+
+		<button type="submit" class="btn btn-default">Envoyer</button>	
+
+		{{response}}	
+	</form>
+
+</div>

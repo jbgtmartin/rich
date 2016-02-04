@@ -1,3 +1,8 @@
+
+input {
+  -webkit-appearance:none;
+}
+
 .navbar-logo {
   position: absolute;
   right: 0;
@@ -20,6 +25,7 @@
 #websites_list > li h4 {
   margin-top: 0;
   margin-bottom: 0;
+  word-wrap: break-word;
 }
 #websites_list > li p {
   margin-bottom: 0;

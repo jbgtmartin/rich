@@ -29,6 +29,11 @@ angular
         controller: 'DashboardCtrl',
         controllerAs: 'dashboard'
       })
+      .when('/register_website', {
+        templateUrl: 'views/register_website.html',
+        controller: 'RegisterWebsiteCtrl',
+        controllerAs: 'register_website'
+      })
       .when('/sign_up', {
         templateUrl: 'views/sign_up.html',
         controller: 'SignUpCtrl',
