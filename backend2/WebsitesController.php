@@ -33,6 +33,7 @@ class WebsitesController extends Controller
 			'pages' => $pages
 		];
 
+		pr($keywords);
 		$this->findNeighbors($document['type'], $document['keywords']);
 
 		$this->m->websites->insert($document);
@@ -78,20 +79,21 @@ class WebsitesController extends Controller
 	private function findKeywords($pages) {
 		$proxy = 'kuzh.polytechnique.fr:8080';
 		$text = '';
-		foreach($pages as $page) {
-			$ch = curl_init();
+
+		foreach($pages as $page) {$ch = curl_init();
 			curl_setopt($ch, CURLOPT_URL,$page);
 			curl_setopt($ch, CURLOPT_PROXY, $proxy);
 			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 			curl_setopt($ch, CURLOPT_HEADER, 0);
 			curl_setopt($ch, CURLOPT_CONNECTTIMEOUT ,5); 
-			curl_setopt($ch, CURLOPT_TIMEOUT, 7); //timeout in seconds
+			curl_setopt($ch, CURLOPT_TIMEOUT, 10); //timeout in seconds
+			$t = curl_exec($ch);
 
 			$status = curl_getinfo($ch)['http_code'];
 			if(!in_array($status, [200, 301, 302])) break;
 
-			$text .= '. '.$this->html2txt(curl_exec($ch));
+			$text .= '. '.$this->html2txt($t);
 			curl_close($ch);
 		}
 
@@ -120,8 +122,6 @@ class WebsitesController extends Controller
 			$d = $this->distance($type, $keywords, $doc['type'], $doc['keywords']);
 			$queue->insert($doc['url'], $d);
 		}
-
-		pr($queue);
 
 		for($i = 0; $i < 100 && !$queue->isEmpty(); $i++)
 			pr($queue->extract());
