@@ -91,7 +91,7 @@ class TextRank
 			}
 			
 			if (count($prev) > 1 && count($prev) < 4) {
-					$phrases[] = $prev;
+				$phrases[] = $prev;
 			}
 
 			foreach ($phrases as $prev) {
@@ -114,7 +114,9 @@ class TextRank
 
 				$phrase = trim($phrase);
 				$score = $score/($end - $start);
-				if(array_key_exists($phrase, $sorted)) $score += $sorted[$phrase];
+				if(array_key_exists($phrase, $sorted)) {
+					$score += $sorted[$phrase];
+				}
 				$sorted[ trim($phrase) ] = $score;
 			}
 

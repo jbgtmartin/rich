@@ -30,15 +30,17 @@ class WebsitesController extends Controller
 			'place' => $_GET['place'],
 			'type' => $_GET['type'],
 			'keywords' => $keywords,
-			'pages' => $pages
+			'pages' => $pages,
+			'adwords' => []
 		];
 
-		pr($keywords);
-		$this->findNeighbors($document['type'], $document['keywords']);
+		$neighbors = $this->findNeighbors($document['type'], $document['keywords']);
 
-		$this->m->websites->insert($document);
+		$document['adwords'] = $this->findAdwords($neighbors);
 
-		$this->output($document['_id']);
+		//$this->m->websites->insert($document);
+
+		//$this->output($document['_id']);
 	}
 
 	private function findPages($url) {
@@ -65,13 +67,13 @@ class WebsitesController extends Controller
 	private function html2txt($document){
 		$search = array('@<>@',
 			'@<script[^>]*?>.*?</script>@si',  // Strip out javascript  
-               '@<style[^>]*?>.*?</style>@siU',    // Strip style tags properly
-               '@<embed[^>]*?>.*?</embed>@siU',    // embed
-               '@<object[^>]*?>.*?</object>@siU',    // object
-	       '@<iframe[^>]*?>.*?</iframe>@siU',    // iframe	       
-               '@<![\s\S]*?--[ \t\n\r]*>@',        // Strip multi-line comments including CDATA               
-               '@</?[^>]*>*@' 		  // html tags
-);
+			'@<style[^>]*?>.*?</style>@siU',    // Strip style tags properly
+			'@<embed[^>]*?>.*?</embed>@siU',    // embed
+			'@<object[^>]*?>.*?</object>@siU',    // object
+			'@<iframe[^>]*?>.*?</iframe>@siU',    // iframe	       
+			'@<![\s\S]*?--[ \t\n\r]*>@',        // Strip multi-line comments including CDATA               
+			'@</?[^>]*>*@' 		  // html tags
+		);
 		$text = preg_replace($search, '', $document);
 		return strip_tags($text);
 	}
@@ -117,20 +119,24 @@ class WebsitesController extends Controller
 
 	private function findNeighbors($type, $keywords) {
 		$queue = new SplPriorityQueue();
+		$queue->setExtractFlags(SplPriorityQueue::EXTR_BOTH);
 		$cursor = $this->m->websites->find([]); 
 		foreach ($cursor as $doc) {
 			$d = $this->distance($type, $keywords, $doc['type'], $doc['keywords']);
-			$queue->insert($doc['url'], $d);
+			$queue->insert($doc, $d);
 		}
 
-		for($i = 0; $i < 100 && !$queue->isEmpty(); $i++)
-			pr($queue->extract());
+		$res = [];
+		for($i = 0; $i < 20 && !$queue->isEmpty(); $i++)
+			$res[] = $queue->extract();
+
+		return $res;
 	}
 
 	// distance inversée, le plus élevé est le meilleur
 	private function distance($typeA, $keywordsA, $typeB, $keywordsB) {
 		$distance = 0;
-		// if($typeA == $typeB) $distance += 10;
+		if($typeA == $typeB) $distance += 1;
 
 		foreach($keywordsA as $k => $w) {
 			if(isset($keywordsB[$k]))
@@ -174,5 +180,24 @@ class WebsitesController extends Controller
 			echo '- Inserted in database' . PHP_EOL;
 			flush();
 		}
+	}
+
+	public function findAdwords($neighbors) {
+		//pr($neighbors);
+		$adwords = [];
+		foreach($neighbors as $neighbor) {
+			foreach($neighbor['data']['adwords'] as $adword => $quality) {
+				if(!array_key_exists($adword, $adwords)) 
+					$adwords[$adword] = 0;
+				$adwords[$adword] += $neighbor['priority'] * $quality;
+			}
+		}
+
+		$max = max($adwords);
+
+		foreach($adwords as $adword => $quality) 
+			$adwords[$adword] = max($quality / $max, 0.05);
+		
+		return $adwords;
 	}
 }
