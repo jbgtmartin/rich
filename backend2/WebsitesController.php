@@ -22,6 +22,7 @@ class WebsitesController extends Controller
 		$pages = $this->findPages($_GET['url']);
 
 		$keywords = $this->findKeywords($pages);
+		if(empty($keywords)) echo 'Le site n\'a pas fourni de keywords.';
 
 		$document = [
 			'url' => $_GET['url'],
@@ -43,10 +44,9 @@ class WebsitesController extends Controller
 		require 'vendor/autoload.php';
 
 		// Initiate crawl
-		$crawler = new \Arachnid\Crawler($url, 4);
+		$crawler = new \Arachnid\Crawler($url, 2);
 
 		$crawler->traverse();
-		
 
 		// Get link data
 		$links = $crawler->getLinks();
@@ -85,10 +85,17 @@ class WebsitesController extends Controller
 			curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 			curl_setopt($ch, CURLOPT_HEADER, 0);
+			curl_setopt($ch, CURLOPT_CONNECTTIMEOUT ,5); 
+			curl_setopt($ch, CURLOPT_TIMEOUT, 7); //timeout in seconds
+
+			$status = curl_getinfo($ch)['http_code'];
+			if(!in_array($status, [200, 301, 302])) break;
+
 			$text .= '. '.$this->html2txt(curl_exec($ch));
 			curl_close($ch);
 		}
 
+		if(strlen($text) < 50) return []; 
 		require "TextRank/vendor/autoload.php";
 
 		$config = new \crodas\TextRank\Config;
@@ -139,12 +146,23 @@ class WebsitesController extends Controller
 
 		while($site = $sites->fetch()) {
 			echo $site['url'] . PHP_EOL;
+			flush();
 			$pages = $this->findPages($site['url']);
-
+			echo '- Pages found ('.count($pages).')' . PHP_EOL;
+			flush();
 			$keywords = $this->findKeywords($pages);
+			if(empty($keyword)) {
+				echo '- No keywords found.' . PHP_EOL;
+				flush();
+				continue;
+			}
+			else {
+				echo '- Keywords found ('.count($keywords).')' . PHP_EOL;				
+				flush();
+			}
 
 			$document = [
-				'url' => $_GET['url'],
+				'url' => $site['url'],
 				'mail' => 'test',
 				'place' => 'test',
 				'type' => 'test',
@@ -153,6 +171,8 @@ class WebsitesController extends Controller
 			];
 
 			$this->m->websites->insert($document);
+			echo '- Inserted in database' . PHP_EOL;
+			flush();
 		}
 	}
 }

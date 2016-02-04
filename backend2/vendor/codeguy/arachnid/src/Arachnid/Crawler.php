@@ -142,7 +142,9 @@ class Crawler
             'curl' => array(
                 CURLOPT_SSL_VERIFYHOST => false,
                 CURLOPT_SSL_VERIFYPEER => false,
-                CURLOPT_PROXY => 'kuzh.polytechnique.fr:8080'
+                CURLOPT_PROXY => 'kuzh.polytechnique.fr:8080',
+                CURLOPT_TIMEOUT => 7,
+                CURLOPT_CONNECTTIMEOUT => 5
             ),
         ));
         $client->setClient($guzzleClient);
