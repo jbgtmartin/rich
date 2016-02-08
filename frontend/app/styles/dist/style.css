@@ -1,8 +1,9 @@
-
-input {
-  -webkit-appearance:none;
+body {
+  padding-bottom: 30px;
 }
-
+.navbar {
+  margin-bottom: 0;
+}
 .navbar-logo {
   position: absolute;
   right: 0;
@@ -10,34 +11,58 @@ input {
 .navbar-logo > img {
   height: 49px;
 }
-#websites_list {
+#title-banner {
+  background-color: #337000;
+  margin-bottom: 20px;
+}
+#title-banner h1 {
+  margin: 10px 0;
+  color: #FFF;
+}
+#title-banner .btn-lg {
+  margin: 7px -15px 0 0;
+}
+.websites-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-#websites_list > li {
+.websites-list > li {
   padding: 10px;
   border: 1px solid #ddd;
   border-top: none;
   cursor: pointer;
+  background-color: #fff;
   transition: all 0.5s ease;
 }
-#websites_list > li h4 {
+.websites-list > li h4 {
   margin-top: 0;
   margin-bottom: 0;
   word-wrap: break-word;
 }
-#websites_list > li p {
+.websites-list > li p {
   margin-bottom: 0;
 }
-#websites_list > li:hover,
-#websites_list > li:focus {
+.websites-list > li:first-child {
+  border-top: 1px solid #ddd;
+}
+.websites-list.main-list > li:first-child {
+  border-top: none;
+}
+.websites-list > li:hover,
+.websites-list > li:focus {
   background-color: #EEE;
 }
-#websites_list > li.active,
-#websites_list > li.active:hover,
-#websites_list > li.active:focus {
+.websites-list > li.active,
+.websites-list > li.active:hover,
+.websites-list > li.active:focus {
   background: linear-gradient(#fccb8e, #fbb45d);
+}
+.website-dashboard-wrapper {
+  background-color: #F5F5F5;
+  padding-bottom: 15px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px 1px #ddd;
 }
 .keyword_weight_bar {
   height: 20px;
@@ -71,6 +96,7 @@ input {
   box-shadow: none;
   padding: 0;
   height: auto;
+  background-color: transparent;
 }
 .table .input-group .btn {
   border: none;

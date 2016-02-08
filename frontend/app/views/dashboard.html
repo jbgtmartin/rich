@@ -1,20 +1,26 @@
 
-<div class="container">
+<div id="title-banner">
 
-	<div style="float: right">
-		<a class="btn btn-default" ng-href="#/register_website"><i class="fa fa-plus"></i> Add website</a>
+	<div class="container">
+		<div style="float: right">
+			<a class="btn btn-lg btn-default" ng-href="#/register_website"><i class="fa fa-plus"></i> Add website</a>
+		</div>
+
+		<h1>Dashboard</h1>	
 	</div>
 
-	<h1>Dashboard</h1>
+</div>
+
+<div class="container">
 
 	<div class="row">
-		<div id="websites_list_wrapper" class="col-md-4">
+		<div id="websites_list_wrapper" class="col-md-3">
 			<div id="websites-search-bar" class="form-group inner-addon left-addon">
 				<input class="form-control" type="text" ng-model="search" placeholder="Recherche">
 				<i class="fa fa-search"></i>
 			</div>
 			
-			<ul id="websites_list" ng-model="request_data">
+			<ul class="websites-list main-list" ng-model="request_data">
 				<li ng-repeat="website in all_websites | filter:search"  ng-click="changeWebsite(website._id)" ng-class="{active : active._id === website._id}">
 					<h4>{{website.url}}</h4>
 					<p>{{website.type}} | {{website.place}}</p>
@@ -22,42 +28,64 @@
 			</ul>
 		</div>
 
-		<div id="website_dashboard_wrapper" class="col-md-8">
-			<div id="website_dashboard">
+		<div class="website-dashboard-wrapper col-md-9">
+			<div class="website-dashboard">
 				<h2>{{active.url}}</h2>
-				<ul>
-					<li><b>_id: </b>{{active._id}}</li>
-					<li><b>mail: </b>{{active.mail}}</li>
-					<li><b>place: </b>{{active.place}}</li>
-					<!-- <li><b>pages: </b>{{active.pages}}</li> -->
-				</ul>
+				<div class="row">
 
-				<table class="table">
-					<tr>
-						<th class="col-xs-4">Keyword</th>
-						<th class="col-xs-8">Weight</th>
-					</tr>
-					<tr>
-						<td colspan="3">
-							<form role="form" ng-submit="addKeyword()">
-								<div class="input-group" style="width:100%">
-									<input type="text" class="form-control" placeholder="Enter new keyword here..." ng-model="new_keyword">
-									<span class="input-group-btn">
-										<button class="btn btn-primary" type="submit"><i class="fa fa-plus"></i></button>
-									</span>
-								</div>
-							</form>
-						</td>
-					</tr>
-					<tr ng-repeat="(keyword, weight) in keywords">
-						<td>{{keyword}}</td>
-						<td>
-							<div class="keyword_weight_bar" style="width:{{weight | normalize : website_keywords_min : website_keywords_max}}%">
-								{{weight | number:2}}
-							</div>
-						</td>
-					</tr>
-				</table>
+					<div class="col-md-8">
+
+						<h3>Keywords</h3>
+						<table class="table">
+							<tr>
+								<th class="col-xs-4">Keyword</th>
+								<th class="col-xs-8">Weight</th>
+							</tr>
+							<tr>
+								<td colspan="3">
+									<form role="form" ng-submit="addKeyword()">
+										<div class="input-group" style="width:100%">
+											<input type="text" class="form-control" placeholder="Enter new keyword here..." ng-model="new_keyword">
+											<span class="input-group-btn">
+												<button class="btn btn-primary" type="submit"><i class="fa fa-plus"></i></button>
+											</span>
+										</div>
+									</form>
+								</td>
+							</tr>
+							<tr ng-repeat="(keyword, weight) in keywords">
+								<td>{{keyword}}</td>
+								<td>
+									<div class="keyword_weight_bar" style="width:{{weight | normalize : website_keywords_min : website_keywords_max}}%">
+										{{weight | number:2}}
+									</div>
+								</td>
+							</tr>
+						</table>						
+					</div>
+
+					<div class="col-md-4">
+						<h3>Info</h3>
+						<ul style="list-style:none; padding:0; margin:0;">
+							<li><i class="fa fa-fw fa-at"></i> {{active.mail}}</li>
+							<li><i class="fa fa-fw fa-map-marker"></i> {{active.place}}</li>
+							<li><i class="fa fa-fw fa-key"></i> {{active._id}}</li>
+						</ul>
+
+						<h3>Nearest websites</h3>
+						
+						<ul class="websites-list">
+							<li ng-repeat="neighbor in closest" ng-click="changeWebsite(neighbor.data._id['$id'])">
+								<h4>{{neighbor.data.url}}</h4>
+								<p>{{neighbor.data.type}} | {{neighbor.data.place}}</p>
+							</li>
+						</ul>
+
+					</div>
+
+				</div>
+
+
 			</div>
 		</div>
 	</div>

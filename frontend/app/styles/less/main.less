@@ -1,4 +1,12 @@
 
+body {
+  padding-bottom: 30px;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
 .navbar-logo {
   position: absolute;
   right: 0;
@@ -8,35 +16,64 @@
   height: 49px;
 }
 
-#websites_list  {
+#title-banner {
+  background-color: @vert;
+  margin-bottom: 20px;
+
+  h1 {
+    margin: 10px 0;
+    color: #FFF;
+  }
+
+  .btn-lg {
+    margin: 7px -15px 0 0;
+  }
+}
+
+.websites-list  {
   list-style: none;
   padding: 0;
   margin:0;
 }
 
-#websites_list > li {
+.websites-list > li {
   padding: 10px;
   border: 1px solid #ddd;
   border-top: none;
   cursor: pointer;
+  background-color: #fff;
   transition: all 0.5s ease;
 
   h4 {
     margin-top: 0;
     margin-bottom: 0;
+    word-wrap: break-word;
   }
   p {
     margin-bottom: 0;
   }
 }
-#websites_list > li:hover,
-#websites_list > li:focus {
+.websites-list > li:first-child {
+  border-top: 1px solid #ddd;
+}
+.websites-list.main-list > li:first-child {
+  border-top: none;
+}
+.websites-list > li:hover,
+.websites-list > li:focus {
   background-color: #EEE;
 }
-#websites_list > li.active,
-#websites_list > li.active:hover,
-#websites_list > li.active:focus {
+.websites-list > li.active,
+.websites-list > li.active:hover,
+.websites-list > li.active:focus {
   background: linear-gradient(lighten(@orange, 25%), lighten(@orange, 15%));
+}
+
+.website-dashboard-wrapper {
+  background-color: #F5F5F5;
+  padding-bottom: 15px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px 1px #ddd;
 }
 
 .keyword_weight_bar {
@@ -79,6 +116,7 @@
     box-shadow: none;
     padding: 0;
     height: auto;
+    background-color: transparent;
   }
   .btn {
     border: none;

@@ -13,7 +13,15 @@ class WebsitesController extends Controller
 		$cursor = $this->m->websites->find(['_id' => new MongoId($id)]);
 		$doc = $this->cursorToArray($cursor)[0];
 
-		$this->findNeighbors($doc['type'], $doc['keywords']);
+		$return = $this->findNeighbors($doc['type'], $doc['keywords']);
+
+		$closest = $return;
+		foreach ($closest as $key => $value) {
+			unset($closest[$key]['data']['keywords']);
+			unset($closest[$key]['data']['pages']);
+		}
+		$this->output($closest);
+
 	}
 
 	public function add() {

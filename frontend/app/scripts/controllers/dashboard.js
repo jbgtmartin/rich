@@ -67,6 +67,9 @@ app.controller('DashboardCtrl', ['$scope', '$http', '$filter', function ($scope,
 		method: 'GET',
 	  	url: base_url + 'backend2/api/websites/get/'
 	}).then(function successCallback(response) {
+		response.data.forEach(function(v, i) {
+			response.data[i].url = formatUrl(v.url);
+		});
 	    $scope.all_websites = response.data;
 	    displayWebsite(response.data[0]._id);
 	  }, function errorCallback(response) {
@@ -75,6 +78,7 @@ app.controller('DashboardCtrl', ['$scope', '$http', '$filter', function ($scope,
 	  });
 
 	$scope.changeWebsite = function(id) {
+		console.log(id);
 		displayWebsite(id);
 	};
 
@@ -88,18 +92,44 @@ app.controller('DashboardCtrl', ['$scope', '$http', '$filter', function ($scope,
 	  		method: 'GET',
 	  		url: base_url + 'backend2/api/websites/get/' + id + '/'
 		}).then(function successCallback(response) {
+				response.data[0]["url"] = formatUrl(response.data[0]["url"]);
+				console.log(response.data);
 				var website = response.data[0];
 				var website_keywords = sliceDictionnary(website.keywords, 20);
 				var minmax = getMinMax(website_keywords);
 				$scope.website_keywords_min = minmax["min"];
 				$scope.website_keywords_max = minmax["max"];
+				$scope.website_keywords_mean = minmax["mean"];
 				$scope.active = website;
 				$scope.keywords = website_keywords;
+
+				getClosestWebsites(id);
 
 		  	}, function errorCallback(response) {
 		    	// called asynchronously if an error occurs
 		    	// or server returns response with an error status.
 		  	});
+	}
+
+	function getClosestWebsites(id) {
+		$http({
+	  		method: 'GET',
+	  		url: base_url + 'backend2/api/websites/closest/' + id + '/'
+		}).then(function successCallback(response) {
+				response.data.forEach(function(v, i) {
+					response.data[i].data.url = formatUrl(v.data.url);
+				});
+				$scope.closest = response.data;
+
+		  	}, function errorCallback(response) {
+		    	// called asynchronously if an error occurs
+		    	// or server returns response with an error status.
+		  	});		
+	}
+
+	function formatUrl(url) {
+		url = url.split("/")[2].split("www.")[1];
+		return url;
 	}
 
 	function sliceDictionnary(dict, limit) {
@@ -117,14 +147,18 @@ app.controller('DashboardCtrl', ['$scope', '$http', '$filter', function ($scope,
 	function getMinMax(keywords) {
 		var max = 0;
 		var min = 1;
+		var sum = 0;
+		var cpt = 0;
 		var current;
 		for(var k in keywords) {
 			current = parseFloat(keywords[k]);
 			if(current > max) max = current;
 			if(current < min) min = current;
+			sum += current;
+			cpt ++;
 		}
 
-		return {"min": min, "max": max};
+		return {"min": min, "max": max, "mean": sum / cpt};
 	}
 
 }]);
