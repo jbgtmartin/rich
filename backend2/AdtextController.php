@@ -41,8 +41,8 @@ class AdTextController extends Controller
 		$closest_ad['clicks'] = 0;
 		$this->appendAdd($closest_ad, $website);
 
-		pr($closest_ad);
-		pr($website);
+		$this->output($closest_ad);
+		
 		return $closest_ad;
 
 	}

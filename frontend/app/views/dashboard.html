@@ -63,19 +63,23 @@
 							</tr>
 						</table>
 						
-						<div class="ads-list-wrapper" ng-show="active.ads.length > 0">
+						<div class="ads-list-wrapper">
 							<h3>Ad texts</h3>
 							<ul class="ads-list bordered-list">
-								<li ng-repeat="ad in active.ads">
+								<li>
+									<button class="btn btn-default" ng-click="generateAd()">Generate ad</button>
+									<button class="btn btn-danger" ng-click="removeAllAds()">Delete all ads</button>
+								</li>
+								<li ng-repeat="ad in active.ads | orderBy : '-fiability'">
 									<span class="title">{{ad.title}}</span><br>
-									<span class="url">http://www.{{active.url}}</span><br>
+									<span class="url">www.{{active.url}}/</span><br>
 									<span class="desc" ng-repeat="desc in ad.desc">{{desc}} </span><br>
 									Fiability: {{ad.fiability}} | Clicks: {{ad.clicks}}
 								</li>
 								<li>
-									<form role="form" ng-submit="addAd()" class="no-border form-inline">
+									<form name="addAdForm" role="form" ng-submit="addAd()" class="no-border form-inline">
 										<input type="text" class="form-control title" placeholder="Title" ng-model="new_ad.title"><br>
-										<span class="url">http://www.{{active.url}}</span><br>
+										<span class="url">www.{{active.url}}/</span><br>
 										<input type="text" class="form-control desc" placeholder="Description - first line" ng-model="new_ad.desc[0]"><br>
 										<input type="text" class="form-control desc" placeholder="Description - second line" ng-model="new_ad.desc[1]"><br>
 										Fiability: <input type="number" class="form-control" placeholder="0.8" ng-model="new_ad.fiability" step="0.01"> | Clicks: <input type="number" class="form-control" placeholder="0" ng-model="new_ad.clicks"><br>

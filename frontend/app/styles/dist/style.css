@@ -80,6 +80,9 @@ body {
   border-radius: 4px;
   box-shadow: 0 0 5px 1px #ddd;
 }
+.website-dashboard-wrapper h2 {
+  font-size: 40px;
+}
 .keyword_weight_bar {
   height: 20px;
   padding-left: 4px;
@@ -140,4 +143,12 @@ body {
 }
 .ads-list .desc.form-control {
   width: 100%;
+}
+.ads-list input[type=number]::-webkit-inner-spin-button,
+.ads-list input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.ads-list input[type=number] {
+  width: 30px;
 }

@@ -37,7 +37,7 @@ class Controller {
 		$cursor = $this->m->websites->find(['_id' => new MongoId($id)]);
 		$doc = $this->cursorToArray($cursor)[0];
 
-		$return = $this->findNeighbors($doc['type'], $doc['keywords']);
+		$return = $this->findNeighbors($doc['type'], $doc['keywords'], $id);
 
 		$closest = $return;
 		foreach ($closest as $key => $value) {
@@ -48,13 +48,16 @@ class Controller {
 
 	}
 
-	private function findNeighbors($type, $keywords) {
+	private function findNeighbors($type, $keywords, $id) {
 		$queue = new SplPriorityQueue();
 		$queue->setExtractFlags(SplPriorityQueue::EXTR_BOTH);
 		$cursor = $this->m->websites->find([]); 
 		foreach ($cursor as $doc) {
-			$d = $this->distance($type, $keywords, $doc['type'], $doc['keywords']);
-			$queue->insert($doc, $d);
+			if($doc['_id'] != new MongoId($id))
+			{
+				$d = $this->distance($type, $keywords, $doc['type'], $doc['keywords']);
+				$queue->insert($doc, $d);
+			}
 		}
 
 		$res = [];
