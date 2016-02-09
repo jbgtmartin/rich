@@ -87,6 +87,28 @@ app.controller('DashboardCtrl', ['$scope', '$http', '$filter', function ($scope,
 		$scope.keywords[$scope.new_keyword] = $scope.website_keywords_max;
 	}
 
+	$scope.addAd = function() {
+		var new_ad = $scope.new_ad;
+		var id = $scope.active._id;
+		$http({
+	  		method: 'GET',
+	  		url: base_url + 'backend2/api/adtext/addAd/' + id + '/',
+	  		params: {
+	  			title: new_ad.title,
+	  			desc1: new_ad.desc[0],
+	  			desc2: new_ad.desc[1],
+	  			fiability: new_ad.fiability,
+	  			clicks: new_ad.clicks
+	  		}
+		}).then(function successCallback(response) {
+				$scope.active.ads.push($scope.new_ad);
+
+		  	}, function errorCallback(response) {
+		    	// called asynchronously if an error occurs
+		    	// or server returns response with an error status.
+		  	});
+	}
+
 	function displayWebsite(id) {
 		$http({
 	  		method: 'GET',

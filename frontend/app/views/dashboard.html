@@ -20,7 +20,7 @@
 				<i class="fa fa-search"></i>
 			</div>
 			
-			<ul class="websites-list main-list" ng-model="request_data">
+			<ul class="bordered-list main-list clickable" ng-model="request_data">
 				<li ng-repeat="website in all_websites | filter:search"  ng-click="changeWebsite(website._id)" ng-class="{active : active._id === website._id}">
 					<h4>{{website.url}}</h4>
 					<p>{{website.type}} | {{website.place}}</p>
@@ -61,7 +61,30 @@
 									</div>
 								</td>
 							</tr>
-						</table>						
+						</table>
+						
+						<div class="ads-list-wrapper" ng-show="active.ads.length > 0">
+							<h3>Ad texts</h3>
+							<ul class="ads-list bordered-list">
+								<li ng-repeat="ad in active.ads">
+									<span class="title">{{ad.title}}</span><br>
+									<span class="url">http://www.{{active.url}}</span><br>
+									<span class="desc" ng-repeat="desc in ad.desc">{{desc}} </span><br>
+									Fiability: {{ad.fiability}} | Clicks: {{ad.clicks}}
+								</li>
+								<li>
+									<form role="form" ng-submit="addAd()" class="no-border form-inline">
+										<input type="text" class="form-control title" placeholder="Title" ng-model="new_ad.title"><br>
+										<span class="url">http://www.{{active.url}}</span><br>
+										<input type="text" class="form-control desc" placeholder="Description - first line" ng-model="new_ad.desc[0]"><br>
+										<input type="text" class="form-control desc" placeholder="Description - second line" ng-model="new_ad.desc[1]"><br>
+										Fiability: <input type="number" class="form-control" placeholder="0.8" ng-model="new_ad.fiability" step="0.01"> | Clicks: <input type="number" class="form-control" placeholder="0" ng-model="new_ad.clicks"><br>
+										<button class="btn btn-default" type="submit">Add a new text</button>										
+									</form>
+								</li>
+							</ul>
+						</div>
+
 					</div>
 
 					<div class="col-md-4">
@@ -74,7 +97,7 @@
 
 						<h3>Nearest websites</h3>
 						
-						<ul class="websites-list">
+						<ul class="bordered-list clickable">
 							<li ng-repeat="neighbor in closest" ng-click="changeWebsite(neighbor.data._id['$id'])">
 								<h4>{{neighbor.data.url}}</h4>
 								<p>{{neighbor.data.type}} | {{neighbor.data.place}}</p>

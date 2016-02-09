@@ -1,4 +1,23 @@
 
+/* Mixins */
+
+.list-no-style {
+  list-style: none;
+  padding: 0;
+  margin:0;
+}
+
+/* End mixins */
+
+.no-border .form-control {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  height: auto;
+}
+
+
 body {
   padding-bottom: 30px;
 }
@@ -30,17 +49,14 @@ body {
   }
 }
 
-.websites-list  {
-  list-style: none;
-  padding: 0;
-  margin:0;
+.bordered-list  {
+  .list-no-style;
 }
 
-.websites-list > li {
+.bordered-list > li {
   padding: 10px;
   border: 1px solid #ddd;
   border-top: none;
-  cursor: pointer;
   background-color: #fff;
   transition: all 0.5s ease;
 
@@ -53,19 +69,22 @@ body {
     margin-bottom: 0;
   }
 }
-.websites-list > li:first-child {
+.bordered-list > li:first-child {
   border-top: 1px solid #ddd;
 }
-.websites-list.main-list > li:first-child {
+.bordered-list.main-list > li:first-child {
   border-top: none;
 }
-.websites-list > li:hover,
-.websites-list > li:focus {
+.bordered-list.clickable {
+  cursor: pointer;
+}
+.bordered-list.clickable > li:hover,
+.bordered-list.clickable > li:focus {
   background-color: #EEE;
 }
-.websites-list > li.active,
-.websites-list > li.active:hover,
-.websites-list > li.active:focus {
+.bordered-list > li.active,
+.bordered-list > li.active:hover,
+.bordered-list > li.active:focus {
   background: linear-gradient(lighten(@orange, 25%), lighten(@orange, 15%));
 }
 
@@ -126,5 +145,22 @@ body {
   }
   .btn-primary {
     color: @orange;
+  }
+}
+
+.ads-list {
+  .list-no-style;
+  .title {
+    color: #1a0dab;
+    font-size: 18px;
+  }
+  .url {
+    color: #006621;
+  }
+  .desc {
+    color: #545454;
+    &.form-control {
+      width: 100%;
+    }
   }
 }

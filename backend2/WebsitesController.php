@@ -2,25 +2,11 @@
 class WebsitesController extends Controller
 {
 	public function get($id = null) {
-		$query = [];
-		if($id && strlen($id) == 24) $query['_id'] = new MongoId($id);
-		$cursor = $this->m->websites->find($query); 
-		
-		$this->output($this->cursorToArray($cursor));
+		$this->output(parent::getWebsites($id));
 	}
 
 	public function closest($id) {
-		$cursor = $this->m->websites->find(['_id' => new MongoId($id)]);
-		$doc = $this->cursorToArray($cursor)[0];
-
-		$return = $this->findNeighbors($doc['type'], $doc['keywords']);
-
-		$closest = $return;
-		foreach ($closest as $key => $value) {
-			unset($closest[$key]['data']['keywords']);
-			unset($closest[$key]['data']['pages']);
-		}
-		$this->output($closest);
+		$this->output(parent::closestWebsites($id));
 
 	}
 
@@ -46,9 +32,9 @@ class WebsitesController extends Controller
 
 		$document['adwords'] = $this->findAdwords($neighbors);
 
-		//$this->m->websites->insert($document);
+		$this->m->websites->insert($document);
 
-		//$this->output($document['_id']);
+		$this->output($document['_id']);
 	}
 
 	private function findPages($url) {
@@ -125,34 +111,6 @@ class WebsitesController extends Controller
 		return $keywords;
 	}
 
-	private function findNeighbors($type, $keywords) {
-		$queue = new SplPriorityQueue();
-		$queue->setExtractFlags(SplPriorityQueue::EXTR_BOTH);
-		$cursor = $this->m->websites->find([]); 
-		foreach ($cursor as $doc) {
-			$d = $this->distance($type, $keywords, $doc['type'], $doc['keywords']);
-			$queue->insert($doc, $d);
-		}
-
-		$res = [];
-		for($i = 0; $i < 20 && !$queue->isEmpty(); $i++)
-			$res[] = $queue->extract();
-
-		return $res;
-	}
-
-	// distance inversée, le plus élevé est le meilleur
-	private function distance($typeA, $keywordsA, $typeB, $keywordsB) {
-		$distance = 0;
-		if($typeA == $typeB) $distance += 1;
-
-		foreach($keywordsA as $k => $w) {
-			if(isset($keywordsB[$k]))
-				$distance += $keywordsB[$k] * $w;
-		}
-		return $distance;
-	}
-
 	public function massivedl() {
 		$bdd = new PDO('mysql:host=localhost;dbname=sites', 'root', 'root');
 
@@ -191,7 +149,6 @@ class WebsitesController extends Controller
 	}
 
 	public function findAdwords($neighbors) {
-		//pr($neighbors);
 		$adwords = [];
 		foreach($neighbors as $neighbor) {
 			foreach($neighbor['data']['adwords'] as $adword => $quality) {

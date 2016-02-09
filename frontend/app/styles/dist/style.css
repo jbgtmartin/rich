@@ -1,3 +1,17 @@
+/* Mixins */
+.list-no-style {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* End mixins */
+.no-border .form-control {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 0;
+  height: auto;
+}
 body {
   padding-bottom: 30px;
 }
@@ -22,40 +36,42 @@ body {
 #title-banner .btn-lg {
   margin: 7px -15px 0 0;
 }
-.websites-list {
+.bordered-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.websites-list > li {
+.bordered-list > li {
   padding: 10px;
   border: 1px solid #ddd;
   border-top: none;
-  cursor: pointer;
   background-color: #fff;
   transition: all 0.5s ease;
 }
-.websites-list > li h4 {
+.bordered-list > li h4 {
   margin-top: 0;
   margin-bottom: 0;
   word-wrap: break-word;
 }
-.websites-list > li p {
+.bordered-list > li p {
   margin-bottom: 0;
 }
-.websites-list > li:first-child {
+.bordered-list > li:first-child {
   border-top: 1px solid #ddd;
 }
-.websites-list.main-list > li:first-child {
+.bordered-list.main-list > li:first-child {
   border-top: none;
 }
-.websites-list > li:hover,
-.websites-list > li:focus {
+.bordered-list.clickable {
+  cursor: pointer;
+}
+.bordered-list.clickable > li:hover,
+.bordered-list.clickable > li:focus {
   background-color: #EEE;
 }
-.websites-list > li.active,
-.websites-list > li.active:hover,
-.websites-list > li.active:focus {
+.bordered-list > li.active,
+.bordered-list > li.active:hover,
+.bordered-list > li.active:focus {
   background: linear-gradient(#fccb8e, #fbb45d);
 }
 .website-dashboard-wrapper {
@@ -106,4 +122,22 @@ body {
 }
 .table .input-group .btn-primary {
   color: #f99212;
+}
+.ads-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.ads-list .title {
+  color: #1a0dab;
+  font-size: 18px;
+}
+.ads-list .url {
+  color: #006621;
+}
+.ads-list .desc {
+  color: #545454;
+}
+.ads-list .desc.form-control {
+  width: 100%;
 }
